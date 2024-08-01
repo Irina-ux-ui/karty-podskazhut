@@ -25,7 +25,6 @@ figure {
   margin: 0;
 }
 
-/*Шаг 2. Базовая настройка CSS-переменных и повторяющихся элементов*/
 .page {
   min-inline-size: 360px;
   margin: 0;
@@ -46,6 +45,12 @@ button:focus-visible {
 
 .button:disabled {
   pointer-events: none;
+}
+
+.theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
 }
 
 .heading {
