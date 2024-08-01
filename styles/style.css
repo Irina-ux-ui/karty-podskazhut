@@ -13,6 +13,8 @@
   box-sizing: border-box;
 }
 
+* { outline: 1px solid #FB1616; } 
+
 p,
 h1,
 h2,
@@ -31,7 +33,7 @@ figure {
   background-color: var(--bg-color, #f3efec);
   color: var(--text-color, #312a4e);
   font-family: var(--main-font, "Raleway");
-}
+  }
 
 a:focus,
 button:focus {
@@ -151,22 +153,24 @@ button:focus-visible {
   border: 1px solid #B3B3B3;
 }
 
+.content__figure {
+  position: relative;
+  left: calc(-1 * var(--content-section-padding-inlin, 5vi));
+  margin-block-start: 7%;
+  margin-block-end: 7%;
+  inline-size: calc(100% + 2 * var(--content-section-padding-inlin, 5vi));
+}
+
 .content__picture {
   inline-size: 100%;
 }
 
-.content__figure {
-  position: relative;
-  inline-size: calc(100% + 10vi);
-  margin: 7% auto;
-  inset-inline-end: 5vi;
-}
-
 .content__picture-caption {
-  font-size: 18px;
+  border-block-end: 1px solid currentColor;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  color: currentColor;
   text-align: center;
-  padding: 20px;
-  border-block-end: 1px solid var(--text-color);
 }
 
 .content__card {
@@ -285,7 +289,7 @@ button:focus-visible {
   }
 
   .footer {
-    border-block-start: 1px solid #312A4E;
+    border-block-start: 1px solid #B3B3B3;
     color: var(--text-color);
     padding: 2.5%;
     margin-block-start: 10%;
