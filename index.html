@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Карты подскажут</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page theme_dark">
-    <header class="header"></header>
+    <header class="header">
     <h1 class="heading header__title content-section">Карты подскажут</h1>
       <nav class="header__menu content-section">
         <div class="header__logo">
@@ -38,20 +38,24 @@
         </ul>
       </nav>
     </header>
-    <main class="content content-section"></main>
+    <main class="content content-section">
       <h2 class="heading content__title">
       Креативный подход к решению проблем
     </h2>
-    <div class="content__text-block content__text-block_type_first-lettered">
-      <p class="content__paragraph">
-        Творческие кризисы, кажется, рано или поздно испытывает любой человек. Часто бывает так, что вы сталкиваетесь с
-        проблемой, не можете решить её с первого раза и начинаете думать, что вообще ни на что не способны. Мозг
-        запоминает
-        эту модель поведения, и на следующий день вам не хочется делать вообще ничего — ведь всё равно ничего не
-        получится.
-        <p class="content__paragraph">Как выйти из такого застоя? Есть разные варианты, мы поговорим об одном из самых креативных — колоде карт.</p>
-      </p>
-    </div>
+    <div
+          class="content__text-block content__paragraph content__text-block_type_first-lettered"
+        >
+          Творческие кризисы, кажется, рано или поздно испытывает любой человек.
+          Часто бывает так, что вы сталкиваетесь с проблемой, не можете решить
+          её с первого раза и начинаете думать, что вообще ни на что не
+          способны. Мозг запоминает эту модель поведения, и на следующий день
+          вам не хочется делать вообще ничего — ведь всё равно ничего не
+          получится.
+        </div>
+        <div class="content__text-block content__paragraph">
+          Как выйти из такого застоя? Есть разные варианты, мы поговорим об
+          одном из самых креативных — колоде карт.
+        </div>
 
     <h2 class="heading content__title">
       Что это за колода
@@ -66,14 +70,12 @@
           srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x" 
           type="images/avif" />
         <source 
-          srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x" 
+          srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x"
           type="images/webp" />
-      <img 
-        loading="lazy"
-        class="content__picture" 
-        srcset="./images/cards-1x.png 1x, ./images/cards-2x.png 2x" 
-        alt="фото колоды Oblique Strategies" 
-      />
+          <img
+          src="./images/cards-1x.png"
+          alt="Колода Oblique Strategies"
+          loading="lazy" />
       </picture >
       <figcaption class="content__picture-caption">
         <p>Колода Oblique Strategies</p>
