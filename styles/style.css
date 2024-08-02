@@ -13,8 +13,6 @@
   box-sizing: border-box;
 }
 
-* { outline: 1px solid #FB1616; } 
-
 p,
 h1,
 h2,
@@ -171,6 +169,7 @@ button:focus-visible {
   padding-block-end: 20px;
   color: currentColor;
   text-align: center;
+  font-size: 18px;
 }
 
 .content__card {
